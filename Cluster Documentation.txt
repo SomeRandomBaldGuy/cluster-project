@@ -28,21 +28,29 @@ At some point I'd like to scale up to larger / more powerful hardware, but for r
 128GB thumb drive acting as a small network share for centralized storage.
 8-port unmanaged switch attached to main network for connectivity.
 
-Cluster Name: Imperium
-xxx.xxx.xxx.11 - Controller Node - pinode01
-xxx.xxx.xxx.12 - Worker Node - pinode02
-xxx.xxx.xxx.13 - Worker Node - pindoe03
-xxx.xxx.xxx.14 - Worker Node - pinode04
+###################################################
+#                                                 #
+#  Cluster Name: Imperium                         #
+#  xxx.xxx.xxx.11 - Controller Node - pinode01    #
+#  xxx.xxx.xxx.12 - Worker Node - pinode02        #
+#  xxx.xxx.xxx.13 - Worker Node - pindoe03        #
+#  xxx.xxx.xxx.14 - Worker Node - pinode04        #
+#                                                 #
+###################################################
 
 **Setup:**
 Running on Ubuntu Server Lite 22.04 LTS.
 Managed entirely headlessly using SSH and SSH keypairs for security.
 
-**Planned Uses:**
-Studying cluster computing.
-Light Kubernetes / k3s.
-Ansible as well as other automation practices.
-Possible small scale web hosting in the future.
+#######################################################
+#                                                     #
+#  **Planned Uses:**                                  #
+#  Studying cluster computing.                        #
+#  Light Kubernetes / k3s.                            #
+#  Ansible as well as other automation practices.     #
+#  Possible small scale web hosting in the future.    #
+#                                                     #
+#######################################################
 
 **Issues Encountered:**
 10/24/23:
@@ -52,6 +60,10 @@ Solution was to run 'sudo lsblk' to check the partition, and 'sudo blkid' to get
 After the new UUID was obtained, edited the '/etc/fstab' file with the new UUID and rebooted the cluster.
 After the nodes had all rebooted and found the "new" storage, created a test file and was able to access on all nodes.
 
-**Resources / Inspiration:**
-Jeff Geerling: https://www.youtube.com/@JeffGeerling / https://github.com/geerlingguy
-Jay LaCroix: https://www.youtube.com/@LearnLinuxTV / https://github.com/LearnLinuxTV
+#############################################################################################
+#                                                                                           #
+#  **Resources / Inspiration:**                                                             #
+#  Jeff Geerling: https://www.youtube.com/@JeffGeerling / https://github.com/geerlingguy    #
+#  Jay LaCroix: https://www.youtube.com/@LearnLinuxTV / https://github.com/LearnLinuxTV     #
+#                                                                                           #
+#############################################################################################
