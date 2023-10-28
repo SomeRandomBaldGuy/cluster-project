@@ -1,4 +1,4 @@
-# cluster-project
+# Cluster Project
 
 This is a project I'm currently working on to dip my feet into the concept of clustering. I'm sure there's better ways to do it, and I'll most likely explore those at some point in the future. 
 
