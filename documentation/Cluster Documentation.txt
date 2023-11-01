@@ -60,6 +60,12 @@ Solution was to run 'sudo lsblk' to check the partition, and 'sudo blkid' to get
 After the new UUID was obtained, edited the '/etc/fstab' file with the new UUID and rebooted the cluster.
 After the nodes had all rebooted and found the "new" storage, created a test file and was able to access on all nodes.
 
+10/31/23:
+Set up Prometheus & Grafana on the controller Pi for the cluster for easier monitoring.
+-Ran into difficulties setting up the systemd service due to a configuration error in the guide I was following.
+-Also ran into issues importing the GPG key for the Grafana repo in APT.
+-Resolved by using apt-key export to move the key to the correct directory and continued with no issues.
+
 #############################################################################################
 #                                                                                           #
 #  **Resources / Inspiration:**                                                             #
