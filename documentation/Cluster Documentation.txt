@@ -66,6 +66,11 @@ Set up Prometheus & Grafana on the controller Pi for the cluster for easier moni
 -Also ran into issues importing the GPG key for the Grafana repo in APT.
 -Resolved by using apt-key export to move the key to the correct directory and continued with no issues.
 
+11/6/23:
+Have been monitoring the cluster for a few days now to see how it goes when left alone.
+Had an incident where all dashboards crashed in Grafana due to a hostname issue.
+Found the hostname to be incorrectly setup and when the service restarted it couldn't collect any data.
+
 #############################################################################################
 #                                                                                           #
 #  **Resources / Inspiration:**                                                             #
