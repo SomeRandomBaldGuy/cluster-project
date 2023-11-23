@@ -71,6 +71,9 @@ Have been monitoring the cluster for a few days now to see how it goes when left
 Had an incident where all dashboards crashed in Grafana due to a hostname issue.
 Found the hostname to be incorrectly setup and when the service restarted it couldn't collect any data.
 
+11/22/23:
+Currently working on setting up containers with Podman as well as setting up services in systemd for containers.
+
 #############################################################################################
 #                                                                                           #
 #  **Resources / Inspiration:**                                                             #
