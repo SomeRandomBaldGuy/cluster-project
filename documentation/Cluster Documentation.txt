@@ -74,6 +74,10 @@ Found the hostname to be incorrectly setup and when the service restarted it cou
 11/22/23:
 Currently working on setting up containers with Podman as well as setting up services in systemd for containers.
 
+11/28/23:
+Currently dealing with a recurring issue that causes one or more of the nodes to stall after booting.
+Issue seems to be related to a service getting hung during boot preventing proper startup.
+
 #############################################################################################
 #                                                                                           #
 #  **Resources / Inspiration:**                                                             #
